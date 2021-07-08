@@ -15,6 +15,7 @@ namespace TheMagiEngine.Data.Models
             this.Roles = new HashSet<IdentityUserRole<string>>();
             this.Claims = new HashSet<IdentityUserClaim<string>>();
             this.Logins = new HashSet<IdentityUserLogin<string>>();
+            this.LikedMemberships = new HashSet<LikedMembership>();
         }
 
         // Audit info
@@ -32,5 +33,11 @@ namespace TheMagiEngine.Data.Models
         public virtual ICollection<IdentityUserClaim<string>> Claims { get; set; }
 
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
+
+        public virtual ICollection<LikedMembership> LikedMemberships { get; set; }
+
+        public string WishlistId { get; set; }
+
+        public virtual Wishlist Wishlist { get; set; }
     }
 }

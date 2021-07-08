@@ -23,7 +23,23 @@
         {
         }
 
-        public DbSet<Setting> Settings { get; set; }
+        public virtual DbSet<Author> Authors { get; set; }
+
+        public virtual DbSet<Book> Books { get; set; }
+
+        public virtual DbSet<BookAuthor> BooksAuthors { get; set; }
+
+        public virtual DbSet<Creator> Creators { get; set; }
+
+        public virtual DbSet<Image> Images { get; set; }
+
+        public virtual DbSet<Membership> Memberships { get; set; }
+
+        public virtual DbSet<LikedMembership> LikedMemberships { get; set; }
+
+        public virtual DbSet<Wishlist> Wishlists { get; set; }
+
+        public virtual DbSet<WishlistBook> WishlistBooks { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
 

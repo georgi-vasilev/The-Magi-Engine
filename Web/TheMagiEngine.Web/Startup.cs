@@ -16,7 +16,6 @@
     using TheMagiEngine.Data.Models;
     using TheMagiEngine.Data.Repositories;
     using TheMagiEngine.Data.Seeding;
-    using TheMagiEngine.Services.Data;
     using TheMagiEngine.Services.Mapping;
     using TheMagiEngine.Services.Messaging;
     using TheMagiEngine.Web.ViewModels;
@@ -63,7 +62,6 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
-            services.AddTransient<ISettingsService, SettingsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
