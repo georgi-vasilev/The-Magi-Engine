@@ -17,7 +17,7 @@
 
         public string CreaterId { get; set; }
 
-        public virtual Creator Creator { get; set; }
+        public virtual ApplicationUser Creator { get; set; }
 
         public string BookId { get; set; }
 

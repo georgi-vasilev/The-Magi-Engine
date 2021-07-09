@@ -29,8 +29,6 @@
 
         public virtual DbSet<BookAuthor> BooksAuthors { get; set; }
 
-        public virtual DbSet<Creator> Creators { get; set; }
-
         public virtual DbSet<Image> Images { get; set; }
 
         public virtual DbSet<Membership> Memberships { get; set; }

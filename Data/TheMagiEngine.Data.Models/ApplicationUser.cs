@@ -16,7 +16,16 @@ namespace TheMagiEngine.Data.Models
             this.Claims = new HashSet<IdentityUserClaim<string>>();
             this.Logins = new HashSet<IdentityUserLogin<string>>();
             this.LikedMemberships = new HashSet<LikedMembership>();
+            this.CreatorMemberships = new HashSet<Membership>();
         }
+
+        public string InstagramUrl { get; set; }
+
+        public string ImageId { get; set; }
+
+        public virtual Image CreatorImage { get; set; }
+
+        public string MembershipId { get; set; }
 
         // Audit info
         public DateTime CreatedOn { get; set; }
@@ -35,6 +44,8 @@ namespace TheMagiEngine.Data.Models
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
 
         public virtual ICollection<LikedMembership> LikedMemberships { get; set; }
+
+        public virtual ICollection<Membership> CreatorMemberships { get; set; }
 
         public string WishlistId { get; set; }
 

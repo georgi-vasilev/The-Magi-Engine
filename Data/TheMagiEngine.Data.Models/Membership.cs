@@ -19,7 +19,7 @@
 
         public string CreatorId { get; set; }
 
-        public virtual Creator Creator { get; set; }
+        public virtual ApplicationUser Creator { get; set; }
 
         public virtual ICollection<LikedMembership> LikedByUser { get; set; }
     }
