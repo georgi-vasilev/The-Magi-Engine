@@ -39,6 +39,8 @@
 
         public virtual DbSet<WishlistBook> WishlistBooks { get; set; }
 
+        public virtual DbSet<Vote> Votes { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)

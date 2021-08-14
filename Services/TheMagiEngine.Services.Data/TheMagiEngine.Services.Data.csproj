@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\TheMagiEngine.Data.Common\TheMagiEngine.Data.Common.csproj" />
     <ProjectReference Include="..\..\Data\TheMagiEngine.Data.Models\TheMagiEngine.Data.Models.csproj" />
+    <ProjectReference Include="..\..\TheMagiEngine.Common\TheMagiEngine.Common.csproj" />
     <ProjectReference Include="..\TheMagiEngine.Services.Mapping\TheMagiEngine.Services.Mapping.csproj" />
   </ItemGroup>
 

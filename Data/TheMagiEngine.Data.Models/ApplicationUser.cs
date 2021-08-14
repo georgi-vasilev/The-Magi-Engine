@@ -17,6 +17,7 @@ namespace TheMagiEngine.Data.Models
             this.Logins = new HashSet<IdentityUserLogin<string>>();
             this.LikedMemberships = new HashSet<LikedMembership>();
             this.CreatorMemberships = new HashSet<Membership>();
+            this.Votes = new HashSet<Vote>();
         }
 
         public string InstagramUrl { get; set; }
@@ -46,6 +47,8 @@ namespace TheMagiEngine.Data.Models
         public virtual ICollection<LikedMembership> LikedMemberships { get; set; }
 
         public virtual ICollection<Membership> CreatorMemberships { get; set; }
+
+        public virtual ICollection<Vote> Votes { get; set; }
 
         public string WishlistId { get; set; }
 

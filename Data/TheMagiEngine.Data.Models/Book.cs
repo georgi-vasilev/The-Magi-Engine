@@ -13,6 +13,7 @@
             this.Author = new HashSet<BookAuthor>();
             this.Images = new HashSet<Image>();
             this.Wishlist = new HashSet<WishlistBook>();
+            this.Votes = new HashSet<Vote>();
         }
 
         public string Title { get; set; }
@@ -28,5 +29,7 @@
         public virtual ICollection<Image> Images { get; set; }
 
         public virtual ICollection<WishlistBook> Wishlist { get; set; }
+
+        public virtual ICollection<Vote> Votes { get; set; }
     }
 }

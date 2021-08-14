@@ -1,8 +1,9 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-namespace TheMagiEngine.Data.Migrations
+﻿namespace TheMagiEngine.Data.Migrations
 {
+    using System;
+
+    using Microsoft.EntityFrameworkCore.Migrations;
+
     public partial class CreatorModifications : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
